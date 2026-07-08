@@ -1,4 +1,5 @@
 ## Using Jupyter Notebooks (1 and 2)
+This is just an introduction to using the Jupyter Notebooks to set up tables and create plots. 
 ```python
 %matplotlib inline
 import pandas as pd
@@ -381,6 +382,7 @@ fig.tight_layout()
 
 ```
 ## Python Fundamentals
+In this part, we go through different types of data, how to save variables, and print functions. 
 ```python
 # Aby python interp. can be used a calculator: 
 3 + 5 + 4
@@ -430,7 +432,7 @@ patient_id = '001'
 ```
 
 ```python
-# use vaariables in python 
+# use variables in python 
 weight_lb = 2.2 * weight_kg
 print(weight_lb)
 ```
@@ -496,6 +498,7 @@ print('weight in kg now:', weight_kg)
 
 ```
 ## Analyzing Data (1, 2 and 3)
+Patient data is plotted and analyzed to find min, max, and std. 
 ```python
 import numpy
 ```
@@ -768,6 +771,7 @@ matplotlib.pyplot.show
 
 ```
 ## Storing Values in Lists
+Here, we go through how to make lists and remove and add elements. 
 ```python
 odds = [1,3, 5, 7]
 print('odds are:', odds)
@@ -921,6 +925,7 @@ print("omitting ending index", sond)
 
 ```
 ## Using Loops
+This section shows us how to use for loops. 
 ```python
 odds = [1, 3, 5, 7]
 
@@ -1001,6 +1006,7 @@ print(len(name))
 
 ```
 ## Using Multiple Files
+In this section, we use multiple data files to create plots. 
 ```python
 import glob
 ```
@@ -1062,6 +1068,7 @@ for filenames in filenames:
 
 ```
 ## Making Choices
+Here we use if statements to analyze patient data to determine which data files are questionable.
 ```python
 import numpy
 ```
@@ -1114,6 +1121,7 @@ else:
 
 ```
 ## Functions (1, 2, 3 and 4)
+We created mutiple functions to convert values, analyze data, etc. more efficiently. 
 ```python
 # convert F to C
 
@@ -1516,6 +1524,7 @@ numpy.loadtxt('inflammation-01.csv', delimiter = ',')
 ```
 
 ## Defensive Programming
+This sections show how we can use assertions to check for errors.  
 ```python
 numbers = [1.5, 2.3, 0.7, 0.001, 4.4]
 total = 0
@@ -1628,6 +1637,7 @@ print(normalize_rec((0, 0, 5, 0)))
 
 ```
 ## Transcribing DNA into RNA
+Here we use clostridium DNA sequence and convert to RNA. 
 ```python
 # prompt user to enter the input fasta file name 
 
@@ -1687,6 +1697,7 @@ print(RNA_seq)
     AUGAAAAGAAAGAUUUGUAAGGCGCUUAUUUGUGCCGCGCUAGCAACUAGCCUAUGGGCUGGGACAUCAACUAAAGUCUACGCUUGGGAUGGAAAGAUUGAUGGAACAGGAACUCAUGCUAUGAUUGUAACUCAAGGGGUUUCAAUCUUAGAAAAUGAUCUGUCCAAAAAUGAACCAGAAAGUGUAAGAAAAAACUUAGAGAUUUUAAAAGAGAACAUGCAUGAACUUCAAUUAGGUUCUACUUAUCCAGAUUAUGAUAAGAAUGCAUAUGAUCUAUAUCAAGAUCAUUUCUGGGAUCCUGAUACAGAUAAUAAUUUCUCAAAGGAUAAUAGUUGGUAUUUAGCUUAUUCUAUACCUGAUACAGGGGAAUCACAAAUAAGAAAAUUUUCAGCAUUAGCUAGAUAUGAAUGGCAAAGAGGAAACUAUAAACAAGCUACAUUCUAUCUUGGAGAGGCUAUGCACUAUUUUGGAGAUAUAGAUACUCCAUAUCAUCCUGCUAAUGUUACUGCCGUUGAUAGCGCAGGACAUGUUAAGUUUGAAACUUUUGCAGAGGAAAGAAAAGAACAGUAUAAAAUAAACACAGCAGGUUGCAAAACUAAUGAGGAUUUUUAUGCUGAUAUCUUAAAAAACAAAGAUUUUAAUGCAUGGUCAAAAGAAUAUGCAAGAGGUUUUGCUAAAACAGGGAAAUCAAUAUACUAUAGUCAUGCUAGCAUGAGUCAUAGUUGGGAUGAUUGGGAUUAUGCAGCAAAGGUAACUCUAGCUAACUCUCAAAAAGGAACAGCGGGAUAUAUUUAUAGAUUCUUACACGAUGUAUCAGAGGGUAAUGAUCCAUCAGUUGGAAAGAAUGUAAAAGAACUAGUAGCUUACAUAUCAACUAGUGGUGAAAAAGAUGCUGGAACAGAUGACUACAUGUAUUUUGGAAUCAAAACAAAGGAUGGAAAAACUCAAGAAUGGGAAAUGGACAACCCAGGAAAUGAUUUUAUGACUGGAAGUAAAGACACUUAUACUUUCAAAUUAAAAGAUGAAAAUCUAAAAAUUGAUGAUAUACAAAAUAUGUGGAUUAGAAAAAGAAAAUAUACAGCAUUCCCAGAUGCUUAUAAGCCAGAAAACAUAAAGUUAAUAGCAAAUGGAAAAGUUGUAGUGGACAAGGAUAUAAAUGAGUGGAUUUCAGGAAAUUCAACUUAUAAUAUAAAAUAA
 ​
 ## Translating RNA into Protein
+The clostridium RNA seq is then converted to protein sequence. 
 ```python
 # prompt user to enter the input RNA file name 
 
