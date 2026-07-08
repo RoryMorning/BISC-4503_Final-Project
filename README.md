@@ -1114,7 +1114,134 @@ else:
 
 ```
 ## Functions (1, 2, 3 and 4)
+```python
+# convert F to C
 
+f_val = 99
+
+c_val = ((f_val-32)*(5/9))
+
+print(c_val)
+```
+    37.22222222222222
+
+
+
+
+```python
+f_val1 = 43
+
+c_val1 = ((f_val1-32)*(5/9))
+
+print(c_val1)
+```
+    6.111111111111112
+
+
+
+
+```python
+def explicit_f_to_C(temp): 
+    # assign the converted val to variable
+    converted = ((temp - 32)*(5/9))
+    # return the value of the new variable 
+    return converted
+```
+
+```python
+def f_to_C(temp): 
+    # return converted values more efficiently than using the return function w/o 
+    # a new variable. This code does the same thing as the previous one, but is more explicit 
+    # in explaining how the return command works
+      return ((temp - 32)*(5/9))
+```
+
+```python
+f_to_C(32)
+```
+
+
+    0.0
+
+
+
+
+
+
+```python
+explicit_f_to_C(32)
+```
+
+
+    0.0
+
+
+
+
+
+
+```python
+print('freezing point of water:', f_to_C(32), 'C')
+print('boiling point of water:', f_to_C(212), 'C')
+```
+    freezing point of water: 0.0 C
+    boiling point of water: 100.0 C
+
+
+
+
+```python
+def c_to_k(temp_c): 
+    return temp_c + 273.15
+print('freezing point of water:', c_to_k(0), 'K')
+```
+    freezing point of water: 273.15 K
+
+
+
+
+```python
+def f_to_k(temp_f): 
+    temp_c = f_to_C(temp_f)
+    temp_k = c_to_k(temp_c)
+    return temp_k
+print('boiling point of water:', f_to_k(212), 'K')
+```
+    boiling point of water: 373.15 K
+
+
+
+
+```python
+print('again, temp in Kelvin was', f_to_k(212))
+```
+    again, temp in Kelvin was 373.15
+
+
+
+
+```python
+def print_temp():
+    print('temp in F was:', temp_f)
+    print('temp in C was:', temp_c)
+    print('temp in K was:', temp_k)
+    
+temp_f = 212
+temp_c = f_to_C(temp_f)
+temp_k = f_to_k(temp_f)
+    
+print_temp()
+```
+    temp in F was: 212
+    temp in C was: 100.0
+    temp in K was: 373.15
+
+
+
+
+```python
+
+```
 
 
 ```python
